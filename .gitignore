@@ -3,5 +3,7 @@ dist/
 test-results/
 .pytest_cache/
 backend/.venv/
+__pycache__/
+*.pyc
 *.tsbuildinfo
 .DS_Store
