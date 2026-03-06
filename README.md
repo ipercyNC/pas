@@ -152,40 +152,41 @@ This executes:
 
 ## Production Readiness Roadmap
 
-High-priority steps before production use:
+Concrete steps to move from prototype to production:
 
-1. Persistence and data safety
-- Replace JSON files with a transactional datastore (PostgreSQL).
-- Add migrations, schema constraints, and rollback strategy.
-- Introduce optimistic locking/versioning for concurrent writes.
+1. Data platform and transaction safety
+- Replace local JSON persistence with PostgreSQL.
+- Define normalized schema for policies, plans, events, projections, users, and roles.
+- Add migration pipeline (Alembic), rollback strategy, and schema constraints.
+- Introduce optimistic locking/version columns for concurrent policy/event writes.
+- Add idempotency keys for mutation endpoints.
 
-2. Authentication and authorization
-- Move from local symmetric JWT auth to managed OIDC/JWKS with key rotation and stricter token lifecycle policy.
-- Add role- and permission-based authorization checks per endpoint.
-- Add audit logs for auth and policy mutations.
+2. Authentication and authorization hardening
+- Move from local symmetric JWT auth to managed OIDC/JWKS with key rotation.
+- Implement role- and permission-based authorization checks per endpoint/action.
+- Add audit logging for authentication, policy mutations, and event mutations.
+- Define token lifecycle controls (access expiry, refresh policy, revocation handling).
 
-3. Security hardening
-- Secrets via secure vault/env management.
-- Strict CORS policy per environment.
-- Rate limiting backed by Redis or gateway-level controls.
-- Input/output threat protections (validation policy, security headers, abuse controls).
+3. Projection governance and model controls
+- Formalize projection rule versioning and release governance.
+- Persist `ruleVersion` and reproducibility metadata on projection results.
+- Build locked regression packs for representative product/policy scenarios.
+- Add trace IDs tying projection responses to exact input sets and rule versions.
+- Keep explicit product disclaimers: projections are presentation-grade and assumption-driven, not actuarial modeling or pricing.
 
-4. Projection governance
-- Version projection rules formally and persist rule version per result.
-- Add regression test packs with locked expected outputs.
-- Add explainability trace IDs and reproducibility metadata.
+4. API and compute scaling
+- Add async projection job processing for large portfolios/heavy workloads.
+- Persist projection history and support compare views.
+- Add projection caching for repeated requests with identical inputs.
+- Standardize pagination/sorting/filtering across list endpoints.
+- Introduce consistent error taxonomy and client-safe diagnostics.
 
-5. Reliability and operations
-- Structured logging, metrics, tracing, and dashboards.
-- Health checks that include dependency status.
-- Containerization and CI/CD with staged deployments.
-- Backup/restore runbooks and incident response procedures.
-
-6. API and UX maturity
-- Pagination/sorting on list endpoints.
-- Better error taxonomy and client-safe diagnostics.
-- Async projection jobs for large portfolios.
-- Historical projection storage and compare views.
+5. Security, observability, and operations
+- Move secrets to environment-specific secure secret management.
+- Enforce strict CORS, security headers, and layered rate limiting (gateway + app).
+- Add structured logs, metrics, tracing, and dashboards with SLO-aligned alerts.
+- Containerize services and implement CI/CD with staged deployments and release gates.
+- Create backup/restore procedures, incident runbooks, and regular recovery drills.
 
 ## Quick Demo Flow
 
