@@ -1,0 +1,37 @@
+{
+  "ul_replay_2025_12_31": {
+    "asOfDate": "2025-12-31",
+    "values": {
+      "cashValue": 1485.51,
+      "surrenderValue": 1365.51,
+      "deathBenefit": 251485.51,
+      "loanBalance": 0.0,
+      "status": "inforce"
+    },
+    "appliedEventsCount": 14,
+    "lastRunning": {
+      "cashValue": 1485.51,
+      "loanBalance": 0.0,
+      "premiumPaid": 2100.0,
+      "chargesAssessed": 670.0
+    }
+  },
+  "iul_replay_2025_02_28": {
+    "asOfDate": "2025-02-28",
+    "values": {
+      "cashValue": 96.48,
+      "surrenderValue": 96.48,
+      "deathBenefit": 300096.48,
+      "loanBalance": 0.0,
+      "status": "inforce"
+    },
+    "appliedEventsCount": 2,
+    "firstEventDelta": {
+      "premiumPaid": 120.0,
+      "cashValue": 48.48,
+      "chargesAssessed": 72.0,
+      "indexCreditRateApplied": 0.01,
+      "indexReturnRaw": 0.2
+    }
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "evt_1001",
+    "policyId": "pol_ul_1001",
+    "eventType": "PREMIUM_PAID",
+    "effectiveDate": "2025-01-15",
+    "payload": {
+      "amount": 1000,
+      "mode": "single"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_1002",
+    "policyId": "pol_ul_1001",
+    "eventType": "MONTHLY_FEE_ASSESSED",
+    "effectiveDate": "2025-01-31",
+    "payload": {
+      "amount": 10,
+      "reason": "administrative"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_1003",
+    "policyId": "pol_ul_1001",
+    "eventType": "INTEREST_CREDITED",
+    "effectiveDate": "2025-02-01",
+    "payload": {
+      "rateAnnual": 0.045,
+      "creditedAmount": 3.71
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_1004",
+    "policyId": "pol_ul_1001",
+    "eventType": "LOAN_TAKEN",
+    "effectiveDate": "2025-07-15",
+    "payload": {
+      "amount": 250,
+      "loanType": "standard"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_1005",
+    "policyId": "pol_wl_1002",
+    "eventType": "PREMIUM_PAID",
+    "effectiveDate": "2025-02-01",
+    "payload": {
+      "amount": 120,
+      "mode": "monthly"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_2001",
+    "policyId": "pol_term_2001",
+    "eventType": "PREMIUM_PAID",
+    "effectiveDate": "2025-03-01",
+    "payload": {
+      "amount": 45,
+      "mode": "monthly"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_2002",
+    "policyId": "pol_term_2001",
+    "eventType": "RIDER_CHANGED",
+    "effectiveDate": "2025-04-01",
+    "payload": {
+      "riderCode": "ADB",
+      "action": "add",
+      "monthlyCharge": 5
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_4001",
+    "policyId": "pol_iul_4001",
+    "eventType": "PREMIUM_PAID",
+    "effectiveDate": "2025-01-02",
+    "payload": {
+      "amount": 1500,
+      "mode": "single"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_4002",
+    "policyId": "pol_iul_4001",
+    "eventType": "LOAN_TAKEN",
+    "effectiveDate": "2025-07-10",
+    "payload": {
+      "amount": 350,
+      "loanType": "participating"
+    },
+    "source": "seed"
+  },
+  {
+    "id": "evt_4003",
+    "policyId": "pol_iul_4001",
+    "eventType": "RIDER_CHANGED",
+    "effectiveDate": "2025-03-15",
+    "payload": {
+      "riderCode": "CHILD",
+      "action": "add",
+      "monthlyCharge": 6
+    },
+    "source": "seed"
+  }
+]

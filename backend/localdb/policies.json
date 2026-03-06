@@ -1,0 +1,380 @@
+[
+  {
+    "id": "pol_ul_1001",
+    "policyNumber": "UL-9001001",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Maya Thompson",
+      "dob": "1985-05-12"
+    },
+    "insured": {
+      "fullName": "Maya Thompson",
+      "dob": "1985-05-12",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_ul_flex_v1",
+    "issueDate": "2025-01-15",
+    "faceAmount": 250000,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_wl_1002",
+    "policyNumber": "WL-9001002",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Liam Carter",
+      "dob": "1978-08-01"
+    },
+    "insured": {
+      "fullName": "Liam Carter",
+      "dob": "1978-08-01",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-02-01",
+    "faceAmount": 150000,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_term_2001",
+    "policyNumber": "TM-9002001",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Avery Johnson",
+      "dob": "1990-10-22"
+    },
+    "insured": {
+      "fullName": "Avery Johnson",
+      "dob": "1990-10-22",
+      "ratingClass": "Preferred Plus"
+    },
+    "planId": "plan_term_20_std_v1",
+    "issueDate": "2025-03-01",
+    "faceAmount": 500000,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_ul_1003",
+    "policyNumber": "UL-9001003",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Noah Bennett",
+      "dob": "1982-03-09"
+    },
+    "insured": {
+      "fullName": "Noah Bennett",
+      "dob": "1982-03-09",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_ul_flex_v1",
+    "issueDate": "2025-04-20",
+    "faceAmount": 300000,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_wl_1004",
+    "policyNumber": "WL-9001004",
+    "agentId": "agt_003",
+    "owner": {
+      "fullName": "Sophia Ramirez",
+      "dob": "1974-11-30"
+    },
+    "insured": {
+      "fullName": "Sophia Ramirez",
+      "dob": "1974-11-30",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-01-10",
+    "faceAmount": 200000,
+    "status": "pending"
+  },
+  {
+    "id": "pol_whole_3001",
+    "policyNumber": "WH-9300001",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Owner 01",
+      "dob": "1971-02-11"
+    },
+    "insured": {
+      "fullName": "Insured 01",
+      "dob": "1971-02-11",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-02-02",
+    "faceAmount": 110000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_universal_3002",
+    "policyNumber": "UN-9300002",
+    "agentId": "agt_003",
+    "owner": {
+      "fullName": "Owner 02",
+      "dob": "1972-03-12"
+    },
+    "insured": {
+      "fullName": "Insured 02",
+      "dob": "1972-03-12",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_iul_index_v1",
+    "issueDate": "2025-03-03",
+    "faceAmount": 120000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_term_3003",
+    "policyNumber": "TE-9300003",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Owner 03",
+      "dob": "1973-04-13"
+    },
+    "insured": {
+      "fullName": "Insured 03",
+      "dob": "1973-04-13",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_term_20_std_v1",
+    "issueDate": "2025-04-04",
+    "faceAmount": 130000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_whole_3004",
+    "policyNumber": "WH-9300004",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Owner 04",
+      "dob": "1974-05-14"
+    },
+    "insured": {
+      "fullName": "Insured 04",
+      "dob": "1974-05-14",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-05-05",
+    "faceAmount": 140000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_universal_3005",
+    "policyNumber": "UN-9300005",
+    "agentId": "agt_003",
+    "owner": {
+      "fullName": "Owner 05",
+      "dob": "1975-06-15"
+    },
+    "insured": {
+      "fullName": "Insured 05",
+      "dob": "1975-06-15",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_iul_index_v1",
+    "issueDate": "2025-06-06",
+    "faceAmount": 150000.0,
+    "status": "pending"
+  },
+  {
+    "id": "pol_term_3006",
+    "policyNumber": "TE-9300006",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Owner 06",
+      "dob": "1976-07-16"
+    },
+    "insured": {
+      "fullName": "Insured 06",
+      "dob": "1976-07-16",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_term_20_std_v1",
+    "issueDate": "2025-07-07",
+    "faceAmount": 160000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_whole_3007",
+    "policyNumber": "WH-9300007",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Owner 07",
+      "dob": "1977-08-17"
+    },
+    "insured": {
+      "fullName": "Insured 07",
+      "dob": "1977-08-17",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-08-08",
+    "faceAmount": 170000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_universal_3008",
+    "policyNumber": "UN-9300008",
+    "agentId": "agt_003",
+    "owner": {
+      "fullName": "Owner 08",
+      "dob": "1978-09-18"
+    },
+    "insured": {
+      "fullName": "Insured 08",
+      "dob": "1978-09-18",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_iul_index_v1",
+    "issueDate": "2025-09-09",
+    "faceAmount": 180000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_term_3009",
+    "policyNumber": "TE-9300009",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Owner 09",
+      "dob": "1979-01-10"
+    },
+    "insured": {
+      "fullName": "Insured 09",
+      "dob": "1979-01-10",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_term_20_std_v1",
+    "issueDate": "2025-10-10",
+    "faceAmount": 190000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_whole_3010",
+    "policyNumber": "WH-9300010",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Owner 10",
+      "dob": "1980-02-11"
+    },
+    "insured": {
+      "fullName": "Insured 10",
+      "dob": "1980-02-11",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-11-11",
+    "faceAmount": 200000.0,
+    "status": "pending"
+  },
+  {
+    "id": "pol_universal_3011",
+    "policyNumber": "UN-9300011",
+    "agentId": "agt_003",
+    "owner": {
+      "fullName": "Owner 11",
+      "dob": "1981-03-12"
+    },
+    "insured": {
+      "fullName": "Insured 11",
+      "dob": "1981-03-12",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_ul_flex_v1",
+    "issueDate": "2025-12-12",
+    "faceAmount": 210000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_term_3012",
+    "policyNumber": "TE-9300012",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Owner 12",
+      "dob": "1982-04-13"
+    },
+    "insured": {
+      "fullName": "Insured 12",
+      "dob": "1982-04-13",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_term_20_std_v1",
+    "issueDate": "2025-01-13",
+    "faceAmount": 220000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_whole_3013",
+    "policyNumber": "WH-9300013",
+    "agentId": "agt_002",
+    "owner": {
+      "fullName": "Owner 13",
+      "dob": "1983-05-14"
+    },
+    "insured": {
+      "fullName": "Insured 13",
+      "dob": "1983-05-14",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_wl_level_v1",
+    "issueDate": "2025-02-14",
+    "faceAmount": 230000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_universal_3014",
+    "policyNumber": "UN-9300014",
+    "agentId": "agt_003",
+    "owner": {
+      "fullName": "Owner 14",
+      "dob": "1984-06-15"
+    },
+    "insured": {
+      "fullName": "Insured 14",
+      "dob": "1984-06-15",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_ul_flex_v1",
+    "issueDate": "2025-03-15",
+    "faceAmount": 240000.0,
+    "status": "inforce"
+  },
+  {
+    "id": "pol_term_3015",
+    "policyNumber": "TE-9300015",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Owner 15",
+      "dob": "1985-07-16"
+    },
+    "insured": {
+      "fullName": "Insured 15",
+      "dob": "1985-07-16",
+      "ratingClass": "Standard"
+    },
+    "planId": "plan_term_20_std_v1",
+    "issueDate": "2025-04-16",
+    "faceAmount": 250000.0,
+    "status": "pending"
+  },
+  {
+    "id": "pol_iul_4001",
+    "policyNumber": "IU-9404001",
+    "agentId": "agt_001",
+    "owner": {
+      "fullName": "Elena Brooks",
+      "dob": "1983-07-14"
+    },
+    "insured": {
+      "fullName": "Elena Brooks",
+      "dob": "1983-07-14",
+      "ratingClass": "Preferred"
+    },
+    "planId": "plan_iul_index_v1",
+    "issueDate": "2025-01-01",
+    "faceAmount": 400000,
+    "status": "inforce"
+  }
+]

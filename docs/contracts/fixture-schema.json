@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pas-fixture-schema-v1",
+  "title": "PAS Local Fixture Schema",
+  "type": "object",
+  "required": [
+    "users",
+    "agents",
+    "productPlans",
+    "policies",
+    "policyEvents"
+  ],
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "email", "displayName", "salt", "passwordHash", "roles"],
+        "properties": {
+          "id": { "type": "string" },
+          "email": { "type": "string", "format": "email" },
+          "displayName": { "type": "string" },
+          "salt": { "type": "string" },
+          "passwordHash": { "type": "string" },
+          "roles": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["admin", "agent", "viewer"] }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "agency", "states", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "agency": { "type": "string" },
+          "states": { "type": "array", "items": { "type": "string", "minLength": 2, "maxLength": 2 } },
+          "status": { "type": "string", "enum": ["active", "inactive"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "productPlans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "productType", "params", "effectiveFrom", "version"],
+        "properties": {
+          "id": { "type": "string" },
+          "code": { "type": "string" },
+          "productType": {
+            "type": "string",
+            "enum": ["TERM_LIFE", "WHOLE_LIFE", "UNIVERSAL_LIFE", "INDEXED_UNIVERSAL_LIFE"]
+          },
+          "params": { "type": "object" },
+          "effectiveFrom": { "type": "string", "format": "date" },
+          "version": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "policyNumber",
+          "agentId",
+          "owner",
+          "insured",
+          "planId",
+          "issueDate",
+          "faceAmount",
+          "status"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "policyNumber": { "type": "string" },
+          "agentId": { "type": "string" },
+          "owner": {
+            "type": "object",
+            "required": ["fullName", "dob"],
+            "properties": {
+              "fullName": { "type": "string" },
+              "dob": { "type": "string", "format": "date" }
+            },
+            "additionalProperties": false
+          },
+          "insured": {
+            "type": "object",
+            "required": ["fullName", "dob", "ratingClass"],
+            "properties": {
+              "fullName": { "type": "string" },
+              "dob": { "type": "string", "format": "date" },
+              "ratingClass": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "planId": { "type": "string" },
+          "issueDate": { "type": "string", "format": "date" },
+          "faceAmount": { "type": "number", "minimum": 0 },
+          "status": { "type": "string", "enum": ["pending", "inforce", "lapsed", "terminated"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "policyEvents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "policyId", "eventType", "effectiveDate", "payload", "source"],
+        "properties": {
+          "id": { "type": "string" },
+          "policyId": { "type": "string" },
+          "eventType": {
+            "type": "string",
+            "enum": [
+              "PREMIUM_PAID",
+              "MONTHLY_FEE_ASSESSED",
+              "INTEREST_CREDITED",
+              "LOAN_TAKEN",
+              "LOAN_REPAID",
+              "RIDER_CHANGED"
+            ]
+          },
+          "effectiveDate": { "type": "string", "format": "date" },
+          "payload": { "type": "object" },
+          "source": { "type": "string", "enum": ["seed", "api", "import"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

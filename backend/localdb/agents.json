@@ -1,0 +1,23 @@
+[
+  {
+    "id": "agt_001",
+    "name": "Jasmine Reed",
+    "agency": "North Harbor Financial",
+    "states": ["NC", "SC", "VA"],
+    "status": "active"
+  },
+  {
+    "id": "agt_002",
+    "name": "Carlos Mendes",
+    "agency": "Blue Ridge Life Advisors",
+    "states": ["FL", "GA"],
+    "status": "active"
+  },
+  {
+    "id": "agt_003",
+    "name": "Priya Natarajan",
+    "agency": "Summit Mutual Group",
+    "states": ["NY", "NJ", "CT"],
+    "status": "inactive"
+  }
+]

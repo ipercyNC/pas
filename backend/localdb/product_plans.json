@@ -1,0 +1,73 @@
+[
+  {
+    "id": "plan_term_20_std_v1",
+    "code": "TERM-20-STD",
+    "productType": "TERM_LIFE",
+    "params": {
+      "termYears": 20,
+      "monthlyPremium": 45,
+      "cashValueEnabled": false
+    },
+    "effectiveFrom": "2025-01-01",
+    "version": "2026.01"
+  },
+  {
+    "id": "plan_wl_level_v1",
+    "code": "WL-LEVEL-01",
+    "productType": "WHOLE_LIFE",
+    "params": {
+      "monthlyPremium": 120,
+      "guaranteedCreditRateAnnual": 0.032,
+      "surrenderChargeFlat": 75
+    },
+    "effectiveFrom": "2025-01-01",
+    "version": "2026.01"
+  },
+  {
+    "id": "plan_ul_flex_v1",
+    "code": "UL-FLEX-01",
+    "productType": "UNIVERSAL_LIFE",
+    "params": {
+      "defaultMonthlyPremium": 100,
+      "interestCreditRateAnnual": 0.045,
+      "monthlyAdministrativeFee": 10,
+      "costOfInsuranceRateMonthly": 0.0002,
+      "surrenderChargeFlat": 120
+    },
+    "effectiveFrom": "2025-01-01",
+    "version": "2026.01"
+  },
+  {
+    "id": "plan_iul_index_v1",
+    "code": "IUL-SP500-01",
+    "productType": "INDEXED_UNIVERSAL_LIFE",
+    "params": {
+      "defaultMonthlyPremium": 275,
+      "monthlyAdministrativeFee": 8,
+      "costOfInsuranceRateMonthly": 0.00012,
+      "indexName": "S&P 500",
+      "indexParticipationRate": 0.95,
+      "indexCapRateAnnual": 0.14,
+      "indexFloorRateAnnual": 0.0,
+      "surrenderChargeFlat": 140,
+      "indexReturnFallbackDriftMonthly": 0.007,
+      "indexReturnFallbackAmplitudeMonthly": 0.009,
+      "indexReturnSeriesMonthly": {
+        "2025-01": 0.018,
+        "2025-02": -0.012,
+        "2025-03": 0.021,
+        "2025-04": 0.009,
+        "2025-05": -0.004,
+        "2025-06": 0.015,
+        "2025-07": 0.012,
+        "2025-08": -0.02,
+        "2025-09": 0.01,
+        "2025-10": 0.013,
+        "2025-11": 0.007,
+        "2025-12": 0.011
+      }
+    },
+    "effectiveFrom": "2025-01-01",
+    "version": "2026.01"
+  }
+]

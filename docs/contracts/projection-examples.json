@@ -1,0 +1,137 @@
+{
+  "projectionRequestExample": {
+    "policyId": "pol_ul_1001",
+    "asOfDate": "2025-12-31"
+  },
+  "projectionResponseExample": {
+    "policyId": "pol_ul_1001",
+    "asOfDate": "2025-12-31",
+    "values": {
+      "cashValue": 2175.8,
+      "surrenderValue": 2055.8,
+      "deathBenefit": 250000,
+      "loanBalance": 250,
+      "status": "inforce"
+    },
+    "assumptions": {
+      "productType": "UNIVERSAL_LIFE",
+      "planCode": "UL-FLEX-01",
+      "planVersion": "2026.01",
+      "interestCreditRateAnnual": 0.045,
+      "monthlyAdministrativeFee": 10,
+      "costOfInsuranceRateMonthly": 0.0008,
+      "projectionCurrency": "USD",
+      "ruleVersion": "projection-rules-v1"
+    },
+    "appliedEvents": [
+      {
+        "eventId": "evt_1001",
+        "eventType": "PREMIUM_PAID",
+        "effectiveDate": "2025-01-15",
+        "delta": {
+          "cashValue": 1000,
+          "premiumPaid": 1000
+        },
+        "running": {
+          "cashValue": 1000,
+          "loanBalance": 0
+        }
+      },
+      {
+        "eventId": "evt_1002",
+        "eventType": "MONTHLY_FEE_ASSESSED",
+        "effectiveDate": "2025-01-31",
+        "delta": {
+          "cashValue": -10,
+          "chargesAssessed": 10
+        },
+        "running": {
+          "cashValue": 990,
+          "loanBalance": 0
+        }
+      },
+      {
+        "eventId": "evt_1003",
+        "eventType": "INTEREST_CREDITED",
+        "effectiveDate": "2025-02-01",
+        "delta": {
+          "cashValue": 3.71
+        },
+        "running": {
+          "cashValue": 993.71,
+          "loanBalance": 0
+        }
+      },
+      {
+        "eventId": "evt_1004",
+        "eventType": "LOAN_TAKEN",
+        "effectiveDate": "2025-07-15",
+        "delta": {
+          "cashValue": -250,
+          "loanBalance": 250
+        },
+        "running": {
+          "cashValue": 1740.35,
+          "loanBalance": 250
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "termLifeProjectionResponseExample": {
+    "policyId": "pol_term_2001",
+    "asOfDate": "2025-12-31",
+    "values": {
+      "cashValue": 0,
+      "surrenderValue": 0,
+      "deathBenefit": 500000,
+      "loanBalance": 0,
+      "status": "inforce"
+    },
+    "assumptions": {
+      "productType": "TERM_LIFE",
+      "planCode": "TERM-20-STD",
+      "planVersion": "2026.01",
+      "projectionCurrency": "USD",
+      "ruleVersion": "projection-rules-v1"
+    },
+    "appliedEvents": [
+      {
+        "eventId": "evt_2001",
+        "eventType": "PREMIUM_PAID",
+        "effectiveDate": "2025-03-01",
+        "delta": {
+          "premiumPaid": 45
+        },
+        "running": {
+          "cashValue": 0,
+          "loanBalance": 0
+        }
+      }
+    ],
+    "warnings": [
+      "Term life plan does not accumulate cash value under ruleVersion projection-rules-v1."
+    ]
+  },
+  "iulProjectionResponseExample": {
+    "policyId": "pol_iul_4001",
+    "asOfDate": "2025-12-31",
+    "values": {
+      "cashValue": 4820.11,
+      "surrenderValue": 4680.11,
+      "deathBenefit": 404470.11,
+      "loanBalance": 350,
+      "status": "inforce"
+    },
+    "assumptions": {
+      "productType": "INDEXED_UNIVERSAL_LIFE",
+      "planCode": "IUL-SP500-01",
+      "indexName": "S&P 500",
+      "indexParticipationRate": 0.9,
+      "indexCapRateAnnual": 0.12,
+      "indexFloorRateAnnual": 0.0,
+      "ruleVersion": "projection-rules-v1"
+    },
+    "warnings": []
+  }
+}
